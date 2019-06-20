@@ -26,6 +26,8 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
+    implementation "org.koin:koin-androidx-scope:2.0.1"
+
     implementation project(":common:base")
     implementation project(":features:splash")
     implementation project(":features:moviedetail")

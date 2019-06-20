@@ -9,11 +9,16 @@ import features.moviedetail.R
 import features.moviedetail.navigator.MovieDetailNavigator
 import features.moviedetail.viewmodel.MovieDetailViewModel
 import kotlinx.android.synthetic.main.activity_movie_detail.*
+import org.koin.android.ext.android.inject
+import org.koin.androidx.viewmodel.ext.android.viewModel
 import sweetfactory.annotations.SweetFactoryDeclaration
 import sweetfactory.annotations.SweetFactoryMethod
 
 @SweetFactoryDeclaration(factory = MovieDetailFactory::class)
 class MovieDetailActivity : BaseActivity() {
+
+    private val viewModel: MovieDetailViewModel by viewModel()
+    private val navigator: MovieDetailNavigator by inject()
 
     companion object {
         @JvmStatic
@@ -26,7 +31,7 @@ class MovieDetailActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-//        tvViewName.text = viewModel.viewName
+        tvViewName.text = viewModel.viewName
     }
 
 }

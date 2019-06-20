@@ -33,6 +33,9 @@ dependencies {
     implementation deps.androidx.appcompat
     implementation deps.androidx.lifecycleExtensions
 
+    implementation deps.koin.scope
+    implementation deps.koin.viewmodel
+
     kapt deps.sweetfactory.compiler
 
     testImplementation deps.junit
