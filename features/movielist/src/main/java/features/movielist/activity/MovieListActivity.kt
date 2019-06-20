@@ -4,7 +4,7 @@ import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import core.navigation.MovieListFactory
+import common.navigation.MovieListFactory
 import features.movielist.R
 import sweetfactory.annotations.SweetFactoryDeclaration
 import sweetfactory.annotations.SweetFactoryMethod

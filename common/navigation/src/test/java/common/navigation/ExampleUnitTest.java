@@ -1,4 +1,4 @@
-package core.navigation;
+package common.navigation;
 
 import org.junit.Test;
 

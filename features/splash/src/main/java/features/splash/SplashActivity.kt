@@ -2,7 +2,7 @@ package features.splash
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import core.navigation.MovieListFactory
+import common.navigation.MovieListFactory
 import sweetfactory.SweetFactory
 
 class SplashActivity : AppCompatActivity() {

@@ -1,4 +1,4 @@
-package core.navigation;
+package common.navigation;
 
 import android.content.Context;
 import androidx.test.InstrumentationRegistry;
