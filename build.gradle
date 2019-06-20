@@ -6,6 +6,8 @@ buildscript {
 
             androidx: '1.0.2',
 
+            dagger: '2.23.2',
+
             sweetfactory: '1.0.0',
 
             compileSdkVersion: 28,
@@ -33,6 +35,14 @@ buildscript {
                             runner: 'androidx.test:runner:1.2.0',
                             espresso: 'androidx.test.espresso:espresso-core:3.2.0'
                     ]
+            ],
+
+            dagger: [
+                    main: "com.google.dagger:dagger:${versions.dagger}",
+                    android: "com.google.dagger:dagger-android:${versions.dagger}",
+                    androidSupport: "com.google.dagger:dagger-android-support:${versions.dagger}",
+                    androidProcessor: "com.google.dagger:dagger-android-processor:${versions.dagger}",
+                    compiler: "com.google.dagger:dagger-compiler:${versions.dagger}"
             ]
     ]
 

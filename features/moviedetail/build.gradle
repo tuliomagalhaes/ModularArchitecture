@@ -36,6 +36,9 @@ dependencies {
     implementation deps.androidx.appcompat
     implementation deps.androidx.lifecycleExtensions
 
+    implementation deps.dagger.androidSupport
+    kapt deps.dagger.compiler
+
     kapt deps.sweetfactory.compiler
 
     testImplementation deps.junit

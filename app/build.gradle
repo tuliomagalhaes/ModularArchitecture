@@ -37,6 +37,12 @@ dependencies {
     implementation deps.androidx.corektx
     implementation deps.androidx.constraintlayout
 
+    implementation deps.dagger.main
+    implementation deps.dagger.android
+    implementation deps.dagger.androidSupport
+    kapt deps.dagger.androidProcessor
+    kapt deps.dagger.compiler
+
     testImplementation deps.junit
     androidTestImplementation deps.androidx.test.runner
     androidTestImplementation deps.androidx.test.espresso

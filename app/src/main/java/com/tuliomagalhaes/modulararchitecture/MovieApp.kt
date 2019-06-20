@@ -1,11 +1,17 @@
 package com.tuliomagalhaes.modulararchitecture
 
-import android.app.Application
+import com.tuliomagalhaes.modulararchitecture.di.DaggerAppComponent
+import dagger.android.AndroidInjector
+import dagger.android.DaggerApplication
 
-class MovieApp : Application() {
+class MovieApp : DaggerApplication() {
 
-    override fun onCreate() {
-        super.onCreate()
+    override fun applicationInjector(): AndroidInjector<out DaggerApplication> {
+        val appComponent = DaggerAppComponent.builder()
+            .application(this)
+            .build()
+        appComponent.inject(this)
+        return appComponent
     }
 
 }

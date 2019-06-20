@@ -11,9 +11,13 @@ import features.moviedetail.viewmodel.MovieDetailViewModel
 import kotlinx.android.synthetic.main.activity_movie_detail.*
 import sweetfactory.annotations.SweetFactoryDeclaration
 import sweetfactory.annotations.SweetFactoryMethod
+import javax.inject.Inject
 
 @SweetFactoryDeclaration(factory = MovieDetailFactory::class)
 class MovieDetailActivity : BaseActivity() {
+
+    private val viewModel by injectViewModel(MovieDetailViewModel::class.java)
+    @Inject lateinit var navigator: MovieDetailNavigator
 
     companion object {
         @JvmStatic
@@ -26,7 +30,7 @@ class MovieDetailActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-//        tvViewName.text = viewModel.viewName
+        tvViewName.text = viewModel.viewName
     }
 
 }

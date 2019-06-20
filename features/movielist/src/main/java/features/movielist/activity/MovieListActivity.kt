@@ -11,9 +11,13 @@ import features.movielist.viewmodel.MovieListViewModel
 import kotlinx.android.synthetic.main.activity_movie_list.*
 import sweetfactory.annotations.SweetFactoryDeclaration
 import sweetfactory.annotations.SweetFactoryMethod
+import javax.inject.Inject
 
 @SweetFactoryDeclaration(factory = MovieListFactory::class)
 class MovieListActivity : BaseActivity() {
+
+    private val viewModel by injectViewModel(MovieListViewModel::class.java)
+    @Inject lateinit var navigator: MovieListNavigator
 
     companion object {
         @JvmStatic
@@ -27,15 +31,15 @@ class MovieListActivity : BaseActivity() {
         super.onCreate(savedInstanceState)
 
         btOpenMovieDetail.setOnClickListener {
-//            viewModel.counter++
-//            navigator.openMovieDetail("")
+            viewModel.counter++
+            navigator.openMovieDetail("")
         }
     }
 
     override fun onResume() {
         super.onResume()
 
-//        tvViewName.text = viewModel.viewName
+        tvViewName.text = viewModel.viewName
     }
 
 }

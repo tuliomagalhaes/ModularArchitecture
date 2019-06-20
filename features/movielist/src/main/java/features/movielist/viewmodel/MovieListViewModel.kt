@@ -1,8 +1,9 @@
 package features.movielist.viewmodel
 
 import androidx.lifecycle.ViewModel
+import javax.inject.Inject
 
-class MovieListViewModel : ViewModel() {
+class MovieListViewModel @Inject constructor() : ViewModel() {
 
     private val VIEW_NAME = "MovieList in ViewModel"
 
