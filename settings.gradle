@@ -1,5 +1,7 @@
 include ':app'
-include ':navigation'
-include ':movielist'
-include ':moviedetail'
-include ':splash'
+
+include ':common:navigation'
+
+include ':features:movielist'
+include ':features:moviedetail'
+include ':features:splash'
