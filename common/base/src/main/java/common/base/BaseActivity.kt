@@ -23,7 +23,7 @@ abstract class BaseActivity : DaggerAppCompatActivity() {
         }
     }
 
-    inline fun <reified T : ViewModel> injectViewModel(viewModelClass: Class<T>): Lazy<T> = lazy {
-        ViewModelProviders.of(this, this.viewModeFactory).get(viewModelClass)
+    inline fun <reified T : ViewModel> viewModel(): Lazy<T> = lazy {
+        ViewModelProviders.of(this, this.viewModeFactory).get(T::class.java)
     }
 }

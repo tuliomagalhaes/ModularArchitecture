@@ -16,7 +16,7 @@ import javax.inject.Inject
 @SweetFactoryDeclaration(factory = MovieListFactory::class)
 class MovieListActivity : BaseActivity() {
 
-    private val viewModel by injectViewModel(MovieListViewModel::class.java)
+    private val viewModel by viewModel<MovieListViewModel>()
     @Inject lateinit var navigator: MovieListNavigator
 
     companion object {
