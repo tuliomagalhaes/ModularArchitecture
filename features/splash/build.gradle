@@ -29,14 +29,13 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
-    implementation"org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
-
-    implementation 'androidx.appcompat:appcompat:1.0.2'
-
     implementation project(":common:base")
 
-    testImplementation 'junit:junit:4.12'
+    implementation deps.kotlinStdLibJdk7
 
-    androidTestImplementation 'androidx.test:runner:1.2.0'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    implementation deps.androidx.appcompat
+
+    testImplementation deps.junit
+    androidTestImplementation deps.androidx.test.runner
+    androidTestImplementation deps.androidx.test.espresso
 }
