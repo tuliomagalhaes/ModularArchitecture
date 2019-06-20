@@ -34,7 +34,7 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.0.2'
     implementation "androidx.lifecycle:lifecycle-extensions:2.0.0"
 
-    implementation project(":common:navigation")
+    implementation project(":common:base")
 
     kapt 'com.tuliomagalhaes:sweetfactory-compiler:1.0.0'
 

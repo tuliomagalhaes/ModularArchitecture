@@ -1,6 +1,7 @@
 include ':app'
 
 include ':common:navigation'
+include ':common:base'
 
 include ':features:movielist'
 include ':features:moviedetail'

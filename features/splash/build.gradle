@@ -33,7 +33,7 @@ dependencies {
 
     implementation 'androidx.appcompat:appcompat:1.0.2'
 
-    implementation project(":common:navigation")
+    implementation project(":common:base")
 
     testImplementation 'junit:junit:4.12'
 

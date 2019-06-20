@@ -4,6 +4,8 @@ import androidx.lifecycle.ViewModel
 
 class MovieListViewModel : ViewModel() {
 
-    val viewName = "MovieList in ViewModel"
+    private var counter = 0
+
+    val viewName = "MovieList in ViewModel: ${counter++}"
 
 }
