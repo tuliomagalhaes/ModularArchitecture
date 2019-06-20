@@ -27,8 +27,14 @@ class MovieListActivity : BaseActivity() {
         super.onCreate(savedInstanceState)
 
         btOpenMovieDetail.setOnClickListener {
+//            viewModel.counter++
 //            navigator.openMovieDetail("")
         }
+    }
+
+    override fun onResume() {
+        super.onResume()
+
 //        tvViewName.text = viewModel.viewName
     }
 

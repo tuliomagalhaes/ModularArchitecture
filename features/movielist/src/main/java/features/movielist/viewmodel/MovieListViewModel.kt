@@ -4,8 +4,14 @@ import androidx.lifecycle.ViewModel
 
 class MovieListViewModel : ViewModel() {
 
-    private var counter = 0
+    private val VIEW_NAME = "MovieList in ViewModel"
 
-    val viewName = "MovieList in ViewModel: ${counter++}"
+    var counter = 0
+    set(value) {
+        viewName = "$VIEW_NAME  $value"
+        field = value
+    }
+
+    var viewName = VIEW_NAME
 
 }
