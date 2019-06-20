@@ -5,8 +5,15 @@
               android:layout_height="match_parent">
 
     <TextView
+            android:id="@+id/tvViewName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Movie List!"/>
+
+    <Button
+            android:id="@+id/btOpenMovieDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Open Movie Detail" />
 
 </LinearLayout>

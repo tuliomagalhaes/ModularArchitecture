@@ -22,6 +22,8 @@ class MovieDetailActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
 
         setContentView(R.layout.activity_movie_detail)
+
+//        tvViewName.text = viewModel.viewName
     }
 
 }

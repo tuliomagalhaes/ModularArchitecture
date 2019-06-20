@@ -1,7 +1,9 @@
 package features.movielist.viewmodel
 
-class MovieListViewModel {
+import androidx.lifecycle.ViewModel
 
+class MovieListViewModel : ViewModel() {
 
+    val viewName = "MovieList in ViewModel"
 
 }

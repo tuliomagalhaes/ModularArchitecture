@@ -32,6 +32,7 @@ dependencies {
     implementation"org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 
     implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation "androidx.lifecycle:lifecycle-extensions:2.0.0"
 
     implementation project(":common:navigation")
     kapt 'com.tuliomagalhaes:sweetfactory-compiler:1.0.0'
